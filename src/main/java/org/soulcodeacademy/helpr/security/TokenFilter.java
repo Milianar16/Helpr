@@ -60,6 +60,7 @@ public class TokenFilter extends OncePerRequestFilter {
 
         return cabecalho.substring(7);//Retorna apenas o codigo do JWT
     }
+    // Passo 1 e 2
     private boolean validarCabecalho(HttpServletRequest request){
         String cabecalho = request.getHeader("Authorization");
         //o cabecalho enviado pelo cliente é valido se possuir
